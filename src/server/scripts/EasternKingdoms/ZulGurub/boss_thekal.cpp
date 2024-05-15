@@ -228,9 +228,9 @@ struct boss_thekal : public BossAI
     {
         if (Creature* zealot = instance->GetCreature(zealotData))
         {
-            zealot->Respawn(true);
-            zealot->SetInCombatWithZone();
-            UpdateZealotStatus(zealotData, false);
+            // zealot->Respawn(true);
+            // zealot->SetInCombatWithZone();
+            // UpdateZealotStatus(zealotData, false);
         }
     }
 

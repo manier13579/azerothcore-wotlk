@@ -626,8 +626,8 @@ public:
                 case EVENT_SPELL_DARKNESS:
                     Talk(EMOTE_KJ_DARKNESS);
                     me->CastSpell(me, SPELL_DARKNESS_OF_A_THOUSAND_SOULS, false);
-                    events.ScheduleEvent(EVENT_SPELL_DARKNESS, phase == PHASE_SACRIFICE ? 20000 : 45000);
-                    events.DelayEvents(8000);
+                    events.ScheduleEvent(EVENT_SPELL_DARKNESS, phase == PHASE_SACRIFICE ? 30000 : 60000);
+                    events.DelayEvents(10000);
                     break;
                 case EVENT_SPELL_ARMAGEDDON:
                     me->CastSpell(me, SPELL_ARMAGEDDON_PERIODIC, true);

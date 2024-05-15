@@ -488,8 +488,8 @@ public:
         void HandleScriptEffect(SpellEffIndex effIndex)
         {
             PreventHitDefaultEffect(effIndex);
-            if (Unit* target = GetHitUnit())
-                target->CastSpell(GetCaster(), SPELL_FOG_OF_CORRUPTION_CHARM, true);
+            // if (Unit* target = GetHitUnit())
+                // target->CastSpell(GetCaster(), SPELL_FOG_OF_CORRUPTION_CHARM, true);
         }
 
         void Register() override
@@ -515,7 +515,7 @@ public:
 
         void HandleApply(AuraEffect const*  /*aurEff*/, AuraEffectHandleModes /*mode*/)
         {
-            GetTarget()->CastSpell(GetTarget(), SPELL_FOG_OF_CORRUPTION_CHARM2, true);
+            // GetTarget()->CastSpell(GetTarget(), SPELL_FOG_OF_CORRUPTION_CHARM2, true);
         }
 
         void HandleRemove(AuraEffect const*  /*aurEff*/, AuraEffectHandleModes /*mode*/)
